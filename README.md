@@ -4,8 +4,7 @@ This is the repository for the Polarized Public Responses to a Pandemic project.
 
 **Path-Dependent Equilibrium and Polarization in Public Responses to a Pandemic**
 
-A model of dynamic game among heterogeneous agents in response to a pan-
-demic is developed, in which the agents' communicable-activity decisions collectively
+A model of dynamic game among heterogeneous agents in response to a pandemic is developed, in which the agents' communicable-activity decisions collectively
 affect the transmission risk of the environment and individually affect each agent's
 utility flows along with their probability of exposure to the transmission risk. Agents'
 equilibrium actions exhibit (1) path-dependent dynamics when their probability of
