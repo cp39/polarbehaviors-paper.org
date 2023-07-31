@@ -8,8 +8,7 @@ A model of dynamic game among heterogeneous agents in response to a pandemic is 
 affect the transmission risk of the environment and individually affect each agent's
 utility flows along with their probability of exposure to the transmission risk. Agents'
 equilibrium actions exhibit (1) path-dependent dynamics when their probability of
-asymptomatic infection is positive and (2) polarization when the hazard rate of expo-
-sure probability exceeds their degree of risk aversion. Comparative statics analyses
+asymptomatic infection is positive and (2) polarization when the hazard rate of exposure probability exceeds their degree of risk aversion. Comparative statics analyses
 show that the levels of agents' equilibrium communicable activity are nonincreasing
 in their discount factor, their probability of showing symptoms upon infection, and
 their expectation of suffering upon showing symptoms. If the virus persists, then
