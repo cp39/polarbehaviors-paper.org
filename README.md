@@ -6,8 +6,8 @@ This is the repository for the Polarized Public Responses to a Pandemic project.
 
 A model of dynamic game among heterogeneous agents in response to a pan-
 demic is developed, in which the agents' communicable-activity decisions collectively
-affect the transmission risk of the environment and individually affect each agents
-utility flows along with their probability of exposure to the transmission risk. Agents
+affect the transmission risk of the environment and individually affect each agent's
+utility flows along with their probability of exposure to the transmission risk. Agents'
 equilibrium actions exhibit (1) path-dependent dynamics when their probability of
 asymptomatic infection is positive and (2) polarization when the hazard rate of expo-
 sure probability exceeds their degree of risk aversion. Comparative statics analyses
