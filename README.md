@@ -50,6 +50,8 @@ Audrey Hu, City University of Hong Kong
 
 Joyce Liu, Peking University
 
+Jinfeng Luo, University of Bonn and Lingnan University
+
 Nora Szech, Karlsruhe Institute of Technology
 
 Yating Yuan, University of Warwick
