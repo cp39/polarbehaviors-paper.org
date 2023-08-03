@@ -1,6 +1,8 @@
-**Polarized Public Responses to a Pandemic**
+**About**
 
-This is the repository for the Polarized Public Responses to a Pandemic project.
+Social polarization has been known to cause unrest and instability. We set out to understand public behaviors during the COVID-19 pandemic and explore the potential reasons behind the polarization phenomenon. Understanding the causes of such polarized behavior is important not only for comprehending the far-reaching implications of the COVID-19 crisis in its aftermath, but also sheds light on other observed polarized behavior and subsequent social conflict.
+
+**Papers**
 
 **Path-Dependent Equilibrium and Polarization in Public Responses to a Pandemic**
 
@@ -30,7 +32,6 @@ the pandemic.
 
 Preventive behaviors in the pandemic encompass the  trade-off between the private return from social activity and the risk of getting infected. Our study demonstrates that, under plausible assumptions regarding risk exposure, the nature of such a trade-off can lead to polarized choices for a relatively homogeneous population. This finding aligns well with the prevalence of behavioral polarization in preventive measures adoption during the pandemic for a variety of domains in the survey data. We validate the theory by confronting other predictions of the theory with the data. We also argue that the polarization of the preventive choices is unlikely driven solely by a polarized distribution of the population.
 
-
 **Citation**
 
 Hu, Audrey, Xu Han, Joyce Liu, Yating Yuan (2023). Path-Dependent Equilibrium and Polarization in Public Responses to a Pandemic. Working Paper.
@@ -38,4 +39,31 @@ Hu, Audrey, Xu Han, Joyce Liu, Yating Yuan (2023). Path-Dependent Equilibrium an
 Han, Xu, Audrey Hu, Joyce Liu, and Jinfeng Luo (2023a). Polarized protective behaviors in response to the Covid pandemic: An empirical study of changes in time spent socializing. Working Paper.
 
 Han, Xu, Audrey Hu, Joyce Liu, and Jinfeng Luo (2023b). What drives polarized preventive behaviors during the pandemic? Working Paper.
- 
+
+**Team**
+
+Te Bao, Nanyang Technology University
+
+Xu Han, City University of Hong Kong
+
+Audrey Hu, City University of Hong Kong
+
+Joyce Liu, Peking University
+
+Nora Szech, Karlsruhe Institute of Technology
+
+Yating Yuan, University of Warwick
+
+**Grant**
+
+2019 -
+
+GRF Grant awarded by the HK Research Grants Council for research project “High-risk Mechanism Design”
+
+2023 -
+
+GRF Grant awarded by the HK Research Grants Council for research project “Path-Dependent Preferences and Polarized Public Responses in Pandemics”
+
+2024 -
+
+GRF Grant awarded by the HK Research Grants Council for research project “Post Pandemic Social Division and Conflict: Theory and Experiments”
