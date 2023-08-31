@@ -2,81 +2,178 @@
 <html>
 <head>
 	<title>PolarBehaviors-Paper</title>
+	<style>
+        h2, h3, h4, h5, h6 {
+            color: darkblue;
+            font-family: 'Arial Black', serif;
+            margin-top: 6em; /* 调整为适当的值 */
+            font-size: 25px;
+        }
+        h1 {
+            color: darkblue;
+            font-family: 'Arial Black', serif;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 5em;
+        }
+		/* 样式保持不变 */
+        body {
+            margin-top: 45px;
+            margin-right: 0px;
+            margin: 100px;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 100px;
+            font-family: 'Sabon Next LT ', serif; /* 设置主体部分的字体 */
+            color: darkblue; /* 设置主体部分的字体颜色 */
+            background-image: url("url.jpg"); /* 替换为您的背景图片的URL */
+            background-size: cover; /* 将背景图片尺寸调整为覆盖整个区域 */
+            background-attachment: fixed; /* 将背景图片固定 */
+        }
+		/* 添加导航栏的样式 */
+        nav {
+            position: fixed;
+            top: 0;
+			left: -20px;
+            width: 100%;
+            background-color: aquamarine;
+            padding: 10px;
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: space-between; /* 让链接在一行中均匀分布 */
+        }
+
+			/* 导航栏链接样式 */
+            nav a {
+                font-family: 'Arial Black', serif;
+                font-weight: bold;
+                font-size: 25px;
+                margin: 10px 70px;
+                display: block;
+                text-decoration: none;
+                color: darkblue;
+            }
+        a {
+            color: blue; /* 设置链接的颜色 */
+			font-size:25px;
+			font-weight:bold;
+            text-decoration: none; /* 去除链接的下划线 */
+        }
+		li {
+			margin: 20px;
+		}
+        .citation-item {
+            list-style: none; /* 去除列表项前面的点 */
+            margin-left: 0; /* 去除左侧的缩进 */
+            padding-left: 0; /* 去除左侧的内边距 */
+            margin: 20px;
+        }
+
+            .citation-item a {
+                color: darkblue; /* 设置链接的颜色 */
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .citation-item p {
+                color: darkblue; /* 设置主体部分的字体颜色 */
+            }
+
+		/* 高亮当前部分标题的样式 */
+        .active {
+            font-family: 'Arial Black', serif;
+            font-weight: bold;
+            font-size: 26px;
+            text-decoration: underline;
+        }
+	</style>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var sections = document.querySelectorAll(".section");
+			var navLinks = document.querySelectorAll("nav a");
+
+			window.addEventListener("scroll", function () {
+				sections.forEach(function (section, index) {
+					var rect = section.getBoundingClientRect();
+					if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+						// 高亮当前部分标题
+						navLinks.forEach(function (link) {
+							link.classList.remove("active");
+						});
+						navLinks[index].classList.add("active");
+					}
+				});
+			});
+		});
+	</script>
 </head>
 <body>
-	<h1>Welcome to Polar-Behaviors Project page</h1>
 
-	<h3>About
-		<li>
-		Social polarization has been known to cause unrest and instability. We set out to understand public behaviors during the COVID-19 pandemic and explore the potential reasons behind the polarization phenomenon. Understanding the causes of such polarized behavior is important not only for comprehending the far-reaching implications of the COVID-19 crisis in its aftermath, but also sheds light on other observed polarized behavior and subsequent social conflict.
-		</li>		
-	<h3>Academic Papers
-	<ul>
-		<li>
-			<a href="PolarPan20230726.pdf">Path-Dependent Equilibrium and Polarization in Public Responses to a Pandemic</a>
-			<p>A model of dynamic game among heterogeneous agents in response to a pandemic is developed, in which the agents' communicable-activity decisions collectively affect the transmission risk of the environment and individually affect each agent's utility flows along with their probability of exposure to the transmission risk. Agents' equilibrium actions exhibit (1) path-dependent dynamics when their probability of asymptomatic infection is positive and (2) polarization when the hazard rate of exposure probability exceeds their degree of risk aversion. Comparative statics analyses show that the levels of agents' equilibrium communicable activity are nonincreasing in their discount factor, their probability of showing symptoms upon infection, and their expectation of suffering upon showing symptoms. If the virus persists, then the model predicts that the only long-run equilibrium outcome is herd immunity.</p>
-		</li>
-		<li>
-			<a href="polarization_counterfactual.pdf">Polarized protective behaviors in response to the Covid pandemic: An empirical study of changes in time spent socializing</a>
-			<p>This paper investigates the existence of polarized protective behaviors in response to the pandemic using empirical analysis of data from the American Time Use Survey (ATUS). The study finds that the proportion of people without daily social interaction increased significantly during the pandemic compared to the same period in 2019. Additionally, based on a counterfactual distribution estimated using the method developed by Chernozhukov et al. (2013), the study shows that people socializing during the pandemic would have spent similar amounts of time socializing if there were no pandemic. These findings provide evidence supporting the existence of polarization in which some people chose safety first and stopped socializing, while others chose to live as usual without reducing their social time during the pandemic.</p>
-		</li>
-		<li>
-			What drives polarized preventive behaviors during the pandemic?</a>
-			<p>Preventive behaviors in the pandemic encompass the trade-off between the private return from social activity and the risk of getting infected. Our study demonstrates that, under plausible assumptions regarding risk exposure, the nature of such a trade-off can lead to polarized choices for a relatively homogeneous population. This finding aligns well with the prevalence of behavioral polarization in preventive measures adoption during the pandemic for a variety of domains in the survey data. We validate the theory by confronting other predictions of the theory with the data. We also argue that the polarization of the preventive choices is unlikely driven solely by a polarized distribution of the population.</p>
-		</li>
-	</ul>
+		<h1>WELCOME TO POLAR-BEHAVIORS PROJECT PAGE</h1>
 
-	<h3>Team
-	<ul>
-		<li>
-			Te Bao, Nanyang Technology University</a>
-	
-		</li>
-		<li>
-			Xu Han, City University of Hong Kong</a>
-	
-		</li>
-		<li>
-			Audrey Hu, City University of Hong Kong</a>
-	
-		</li>
-		<li>
-			Joyce Liu, Peking University</a>
-	
-		</li>
-		<li>
-			Jinfeng Luo, University of Bonn and Lingnan University</a>
-	
-		</li>
-		<li>
-			Nora Szech, Karlsruhe Institute of Technology</a>
-	
-		</li>
-		<li>
-			Yating Yuan, University of Warwick</a>
-	
-		</li>
 
-	</ul>	
+	<nav>
+		<a href="#section1">ABOUT</a>
+		<a href="#section2">PAPERS</a>
+		<a href="#section3">GRANT</a>
+	</nav>
 
-	<h3>Grant
-		<li>
-		2019 -
-		</li>
-		<li>
-		GRF Grant awarded by the HK Research Grants Council for research project “High-risk Mechanism Design”
-		</li>
-		<li>
-		2023 -
-		</li>
-		<li>
-		GRF Grant awarded by the HK Research Grants Council for research project “Path-Dependent Preferences and Polarized Public Responses in Pandemics”
-		</li>
-		<li>
-		2024 -
-		</li>
-		<li>
-		GRF Grant awarded by the HK Research Grants Council for research project “Post Pandemic Social Division and Conflict: Theory and Experiments”
-		</li>
+	<div id="content">
+		<div id="section1" class="section">
+			<h2>ABOUT</h2>
+			<ul>
+				<li>
+					Social polarization has been known to cause unrest and instability. We set out to understand public behaviors during the COVID-19 pandemic and explore the potential reasons behind the polarization phenomenon. Understanding the causes of such polarized behavior is important not only for comprehending the far-reaching implications of the COVID-19 crisis in its aftermath, but also sheds light on other observed polarized behavior and subsequent social conflict.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div id="section2" class="section">
+			<h2>PAPERS</h2>
+			<ul>
+				<li>
+					<a href="PolarPan20230726.pdf">Path-Dependent Equilibrium and Polarization in Public Responses to a Pandemic</a>
+					<p>A model of dynamic game among heterogeneous agents in response to a pandemic is developed, in which the agents' communicable-activity decisions collectively affect the transmission risk of the environment and individually affect each agent's utility flows along with their probability of exposure to the transmission risk. Agents' equilibrium actions exhibit (1) path-dependent dynamics when their probability of asymptomatic infection is positive and (2) polarization when the hazard rate of exposure probability exceeds their degree of risk aversion. Comparative statics analyses show that the levels of agents' equilibrium communicable activity are nonincreasing in their discount factor, their probability of showing symptoms upon infection, and their expectation of suffering upon showing symptoms. If the virus persists, then the model predicts that the only long-run equilibrium outcome is herd immunity.</p>
+				</li>
+				<li class="citation-item">
+					<a>Citation</a>
+					<p>XXX,xxx</p>
+				</li>
+				<li>
+					<a href="polarization_counterfactual.pdf">Polarized protective behaviors in response to the Covid pandemic: An empirical study of changes in time spent socializing</a>
+					<p>This paper investigates the existence of polarized protective behaviors in response to the pandemic using empirical analysis of data from the American Time Use Survey (ATUS). The study finds that the proportion of people without daily social interaction increased significantly during the pandemic compared to the same period in 2019. Additionally, based on a counterfactual distribution estimated using the method developed by Chernozhukov et al. (2013), the study shows that people socializing during the pandemic would have spent similar amounts of time socializing if there were no pandemic. These findings provide evidence supporting the existence of polarization in which some people chose safety first and stopped socializing, while others chose to live as usual without reducing their social time during the pandemic.</p>
+				</li>
+				<li class="citation-item">
+					<a>Citation</a>
+					<p>XXX,xxx</p>
+				</li>
+				<li>
+					<a>What drives polarized preventive behaviors during the pandemic?</a>
+					<p>Preventive behaviors in the pandemic encompass the trade-off between the private return from social activity and the risk of getting infected. Our study demonstrates that, under plausible assumptions regarding risk exposure, the nature of such a trade-off can lead to polarized choices for a relatively homogeneous population. This finding aligns well with the prevalence of behavioral polarization in preventive measures adoption during the pandemic for a variety of domains in the survey data. We validate the theory by confronting other predictions of the theory with the data. We also argue that the polarization of the preventive choices is unlikely driven solely by a polarized distribution of the population.</p>
+				</li>
+				<li class="citation-item">
+					<a>Citation</a>
+					<p>XXX,xxx</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div id="section3" class="section">
+			<h2>GRANT</h2>
+			<ul>
+				<li>
+					GRF Grant awarded by the HK Research Grants Council for research project “High-risk Mechanism Design”(2019-)
+				</li>
+				<li>
+					GRF Grant awarded by the HK Research Grants Council for research project “Path-Dependent Preferences and Polarized Public Responses in Pandemics”(2023-)
+				</li>
+				<li>
+					GRF Grant awarded by the HK Research Grants Council for research project “Post Pandemic Social Division and Conflict: Theory and Experiments”(2024-)
+				</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
